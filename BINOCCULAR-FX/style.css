@@ -1,0 +1,81 @@
+div#forest {
+    /*border: 5px solid red;*/
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../images/brad.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+#forest .goggles {
+    width: 600px;
+    height: 250px;
+    border: 10px solid #515859;
+    position: absolute;
+    border-radius: 25%;
+    background-image: linear-gradient(black, white, black);
+    background-attachment: fixed;
+    background-size: cover;
+    top: 400px;
+}
+#forest .goggles .container {
+    width: 500px;
+    height: 200px;
+    background-color: gray;
+    background-image: linear-gradient(gray, black, gray);
+    /*opacity: 0.5;*/
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    border-radius: 30%;
+}
+#forest .goggles .container .glass {
+    width: 180px;
+    height: 180px;
+    /*background-color: #42d9f4;*/
+    position: absolute;
+    background-position: bottom;
+    /*background-image: url(../images/brad.jpg);*/
+    /*opacity: 0.5;*/
+    border: 20px solid #515859;
+    top: -10px;
+    background-attachment: fixed;
+    background-size: 200%;
+    overflow: hidden;
+}
+#forest .goggles .container .glass.left {
+    left: -10px;
+    border-radius: 200px;
+    border-right-width: 40px;
+}
+#forest .goggles .container .glass.right {
+    right: -10px;
+    border-radius: 200px;
+    border-left-width: 40px;
+}
+#forest .goggles .container .glass .shade {
+    background-color: orange;
+    opacity: 0.5;
+}
+#forest .goggles .container .glass .shade {
+    background-image: url(../images/brad.jpg);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    transform: scale(3);
+}
+
+#forest .goggles .container .glass .shade::before{
+    content:"OK";
+    background-image: linear-gradient( 45deg, #006400b5 60px, #00800047 90px, #00640087 120px);
+    mix-blend-mode: color-burn;
+    width: 180px;
+    height: 180px;
+    display: block;
+    /*opacity: 0.4;*/
+}
